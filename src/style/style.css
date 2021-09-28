@@ -87,8 +87,6 @@ section#hero .container-hero .search-field{
     box-sizing: border-box;
     padding-right: 15px;
     align-items: center;
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
     border-radius: 8px;
     padding-left: 10px ;
 }
@@ -185,7 +183,7 @@ section#persuasive .persuasive-component{
     background: linear-gradient(276.64deg, #4B68B0 -16.26%, rgba(113, 172, 240, 0.972816) 115.48%);
 }
 section#persuasive h2{
-    flex: 1;
+    flex: 2;
     font-size: 44px;
     line-height: 150%;
     color: white;
@@ -198,10 +196,15 @@ section#persuasive p{
 }
 section#persuasive .cta-persuasive{
     flex: 1;
-    display: flex;
 }
-section#persuasive img{
-    transform: scale(0.7);
+section#persuasive .cta-persuasive button{
+    padding: 15px 30px;
+    border: none;
+    background-color: white;
+    color: #4B68B0;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 30px;
 }
 section#persuasive .covid-accent{
     position: absolute;   
@@ -256,48 +259,7 @@ footer .credits p{
 footer .credits p span,footer .credits a{
     color: #989898;
 }
-section#covid-definition{
-    padding-bottom: 100px;
-    padding-top: 100px;
-    background-color: white;
-}
-section#covid-definition .container-hero{
-    margin-top: 80px;
-}
-section#covid-definition .container-hero h1{
-    font-size: 60px;
-    font-family: 'Raleway';
-}
-section#covid-definition .container-hero p{
-    font-size: 20px;
-    margin-top: 30px;
-    width: 100%;
-    margin-bottom: 50px;
-    color: #636363;
-}
-section#covid-definition .container-hero .summary{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    margin-bottom: 30px;
-    align-items: center;
-}
-section#covid-definition .container-hero .summary img{
-    width: 50px;
-    height: 50px;
-}
-section#covid-definition .container-hero .summary p{
-    color: #71ACF0;
-    height: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 30px;
-}
-section#covid-definition .covid-illustration{
-   transform: scale(0.80);
-   margin-top: -60px;
-   margin-left: 135px;
-}
+
 
 @media screen and (max-width: 1200px){
     section{

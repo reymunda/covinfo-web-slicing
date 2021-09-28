@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap';
 import axios from 'axios';
 import './style/style.css';
-import './global-data.js';
+import './global-data';
 import {
   Chart,
   ArcElement,
@@ -76,7 +76,7 @@ axios.get('https://covid19.mathdro.id/api/')
     globalDataContainer.appendChild(globalData);
   });
 searchField.addEventListener('input', () => {
-  if (searchField.value == '') {
+  if (searchField.value === '') {
     axios.get('https://covid19.mathdro.id/api/')
       .then((res) => {
         const globalSummary = res.data;
@@ -102,7 +102,7 @@ searchButton.addEventListener('click', () => {
         globalData.setAttribute('deaths', countrySummary.deaths.value.toLocaleString('en-US'));
         globalData.setAttribute('recovered', countrySummary.recovered.value.toLocaleString('en-US'));
       })
-      .catch((err) => {
+      .catch(() => {
         summaryTitle.textContent = 'Country is not found!';
         lastUpdate.textContent = 'Please type the country correctly';
         globalData.setAttribute('confirmed', 0);
