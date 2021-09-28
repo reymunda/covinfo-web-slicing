@@ -11,6 +11,7 @@ h1,h2,h3,h4,h5{
 p,a{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    line-height: 150%;
 }
 nav{
     padding: 0 100px;
@@ -44,9 +45,86 @@ section{
     padding: 0 100px;
     min-height: 90vh;
 }
+section#covid-definition{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: white;
+}
+section#covid-definition .container-hero h1{
+    font-size: 60px;
+    font-family: 'Raleway';
+}
+section#covid-definition .container-hero p{
+    font-size: 20px;
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 50px;
+    color: #636363;
+}
+section#covid-definition .container-hero .summary{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+section#covid-definition .container-hero .summary img{
+    width: 50px;
+    height: 50px;
+}
+section#covid-definition .container-hero .summary p{
+    color: #71ACF0;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+section#covid-definition .covid-illustration{
+   transform: scale(0.80);
+   margin-top: -60px;
+   margin-left: 135px;
+}
+section#symptoms{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+section#symptoms .symptom-illustration{
+    transform: scale(0.9);
+    margin-left: -115px;
+}
+section#symptoms h2{
+    font-size: 44px;
+}
+section#symptoms p{
+    font-size: 20px;
+    width: 90%;
+    color: #636363;
+}
+section#symptoms .symptoms-icons{
+    margin-top: 50px;
+}
+section#symptoms .symptom{
+    background-color: #F5F9FF;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+section#symptoms .symptom img{
+    transform: scale(0.8);
+}
+section#symptoms .symptom p{
+    font-size: 18px;
+    margin-top: 20px;
+    color: #71ACF0;
+    width: 100%;
+}
+section#symptoms .container{
+    padding: 15px;
+}
+section#symptoms .col-md-5{
+    width: 45%;
+}
 section#persuasive{
     padding-top: 100px;
-    border: 1px solid black;
     padding-bottom: 300px;
 }
 section#persuasive .persuasive-component{
@@ -116,45 +194,4 @@ footer .credits p{
 }
 footer .credits p span,footer .credits a{
     color: #989898;
-}
-section#covid-definition{
-    padding-bottom: 100px;
-    padding-top: 100px;
-    background-color: white;
-}
-section#covid-definition .container-hero{
-}
-section#covid-definition .container-hero h1{
-    font-size: 60px;
-    font-family: 'Raleway';
-}
-section#covid-definition .container-hero p{
-    font-size: 20px;
-    margin-top: 30px;
-    width: 100%;
-    margin-bottom: 50px;
-    color: #636363;
-}
-section#covid-definition .container-hero .summary{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    margin-bottom: 30px;
-    align-items: center;
-}
-section#covid-definition .container-hero .summary img{
-    width: 50px;
-    height: 50px;
-}
-section#covid-definition .container-hero .summary p{
-    color: #71ACF0;
-    height: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 30px;
-}
-section#covid-definition .covid-illustration{
-   transform: scale(0.80);
-   margin-top: -60px;
-   margin-left: 135px;
 }
