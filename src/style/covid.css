@@ -46,11 +46,13 @@ section{
 }
 section#persuasive{
     padding-top: 100px;
+    border: 1px solid black;
     padding-bottom: 300px;
 }
 section#persuasive .persuasive-component{
     width: 100%;
     height: 390px;
+    margin-top: 100px;
     position: relative;
     box-shadow: 0px 52px 84px 0px rgba(148, 201, 255, 0.6);
     display: flex;
@@ -62,10 +64,8 @@ section#persuasive .persuasive-component{
     background: linear-gradient(276.64deg, #4B68B0 -16.26%, rgba(113, 172, 240, 0.972816) 115.48%);
 }
 section#persuasive h2{
-    flex: 2;
     font-size: 44px;
-    line-height: 150%;
-    color: white;
+    color: #1D244E;
 }
 section#persuasive p{
     font-size: 20px;
@@ -82,6 +82,10 @@ section#persuasive img{
 }
 section#persuasive .covid-accent{
     position: absolute;   
+    right: -50px;
+    top: -250px;
+    transform: scale(0.9);
+
 }
 footer{
     width: 100%;
