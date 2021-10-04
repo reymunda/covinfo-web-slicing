@@ -319,26 +319,6 @@ footer .credits p span,footer .credits a{
         font-size: 28px;
         margin-top: 0;
     }
-    section#covid-definition .container-hero p{
-        font-size: 18px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    section#covid-definition .container-hero .summary{
-        margin-top: -5px;
-    }
-    section#covid-definition .container-hero .summary img{
-        transform: scale(0.9);
-    }
-    section#covid-definition .container-hero .summary p{
-        font-size: 18px;
-        margin-left: 20px;
-    }
-    section#covid-definition .covid-illustration{
-        transform: scale(0.6);
-        margin-top: -60px;
-        margin-left: 0;
-     }
     section#persuasive .persuasive-component{
         height: 340px;
     }
@@ -347,13 +327,7 @@ footer .credits p span,footer .credits a{
         flex: 1;
     }
     section#persuasive .cta-persuasive{
-        width: 50%;
-        display: flex;
-        flex: 2;
-    }
-    section#persuasive .cta-persuasive img{
-        transform: scale(0.5);
-
+        flex: 1;
     }
     section#persuasive .covid-accent{
         position: absolute;   
@@ -474,28 +448,6 @@ footer .credits p span,footer .credits a{
         color: #636363;
         font-size: 18px;
     }
-    section#covid-definition{
-        padding-top: 75px;
-        padding-bottom: 75px;
-    }
-    section#covid-definition .covid-illustration{
-        transform: scale(0.5);
-        margin-top: -100px;
-        margin-left: -140px;
-     }
-     section#covid-definition .container-hero h1{
-        font-size: 36px;
-     }
-     section#covid-definition .container-hero p{
-         font-size: 17px;
-     }
-     section#covid-definition .container-hero .summary p{
-         font-size: 16px;
-         margin-left: 10px;
-     }
-     section#covid-definition .container-hero .summary img{
-         transform: scale(0.7);
-     }
      section#persuasive h2{
         font-size: 30px;
         flex: 1;
@@ -506,10 +458,12 @@ footer .credits p span,footer .credits a{
         align-items: flex-start;
     }
     section#persuasive .persuasive-component .cta-persuasive{
-        width: 100%;
         justify-content: space-between;
+        margin-top: 20px;
     }
-
+    section#persuasive .persuasive-component .cta-persuasive button{
+        margin-top: 20px;
+    }
     section#persuasive .covid-accent.one,section#persuasive .covid-accent.two,section#persuasive .covid-accent.three,section#persuasive .covid-accent.four{
         transform: scale(0.7);
     }
@@ -577,22 +531,18 @@ footer .credits p span,footer .credits a{
     section#hero .global-summary .global-case-data .col-md-4{
         border: none;
     }
-    section#covid-definition .covid-illustration{
-        display: none;
-    }
     section#persuasive .covid-accent.one,section#persuasive .covid-accent.two,section#persuasive .covid-accent.three,section#persuasive .covid-accent.four{
-        transform: scale(0.5);
+        transform: scale(0.7);
     }
     section#persuasive .persuasive-component{
         height: fit-content;
-        align-items: center;
     }
     section#persuasive .persuasive-component .cta-persuasive{
         flex-direction: column;
         width: fit-content;
     }
-    section#persuasive .persuasive-component .cta-persuasive img{
-        width: 200px;
+    section#persuasive .persuasive-component .cta-persuasive button{
+        width: 100%;
     }
     footer{
         height: fit-content;
@@ -601,6 +551,10 @@ footer .credits p span,footer .credits a{
     }
     footer .col-md-4{
         width: 100%;
+        margin-bottom: 30px;
+    }
+    footer .brand-social .social-media{
+        margin-top: 30px;
     }
 }
 @media screen and (max-width: 576px){
@@ -636,18 +590,33 @@ footer .credits p span,footer .credits a{
     section#chart-display .title p{
         font-size: 16px;
     }
-    section#covid-definition .container-hero{
-        margin-top: 0;
-    }
-    section#covid-definition .container-hero h1{
+    section#persuasive .cta-persuasive h2{
         font-size: 30px;
+    }
+    section#persuasive .cta-persuasive p{
+        font-size: 16px;
+    }
+    section#persuasive .cta-persuasive button{
+        font-size: 16px;
     }
     section#persuasive{
         padding-top: 50px;
         padding-bottom: 200px;
     }
+    section#persuasive .covid-accent{
+        transform: scale(0.6);
+    }
+    section#persuasive .covid-accent.four{
+        left: 50px;
+    }
     footer{
         padding-left: 30px;
         padding-right: 30px;
+        text-align: center;
+    }
+    footer .gws h2{
+        border: 1px solid black;
+        width: fit-content;
+        text-align: center;
     }
 }

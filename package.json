@@ -27,7 +27,8 @@
     "chart.js": "^3.5.1",
     "chartjs": "^0.3.24",
     "jquery": "^3.6.0",
-    "lightslider": "^1.1.6"
+    "owl-carousel": "^1.0.0",
+    "owl.carousel": "^2.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
