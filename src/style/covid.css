@@ -195,9 +195,6 @@ section#news .container .news-item{
     width: 270px;
     height: 400px;
 }
-section#news .container ul{
-    margin-top: 40px;
-}
 section#news .container a{
     text-decoration: none;
 }
@@ -273,9 +270,9 @@ footer .credits p span,footer .credits a{
     display: none;
 }
 @media screen and (max-width: 1200px){
-    *{
+    /* *{
         border: 1px solid black;
-    }
+    } */
     section{
         padding-right: 80px;
         width: 100%;
@@ -357,9 +354,7 @@ footer .credits p span,footer .credits a{
     }
 }
 @media screen and (max-width: 992px){
-    *{
-        border: 1px solid black;
-    }
+
     nav{
         padding-left: 60px;
         top: 0;
@@ -398,7 +393,10 @@ footer .credits p span,footer .credits a{
      }
      section#covid-definition .container-hero .summary img{
          transform: scale(0.7);
-        }
+    }
+    section#symptoms{
+        padding-bottom: 50px;
+    }
     section#symptoms h2{
         font-size: 30px;
     }
@@ -414,9 +412,6 @@ footer .credits p span,footer .credits a{
     }
      section#symptoms .symptoms-icons{
         margin-top: 20px;
-    }
-    section#symptoms .symptoms-icons .row:nth-child(2){
-        border: 1px solid red;
     }
     section#symptoms .symptoms-icons .row:nth-child(1) .symptom:nth-child(2){
         margin-right: 0px;
@@ -437,6 +432,9 @@ footer .credits p span,footer .credits a{
     }
     section#symptoms .symptoms-icons .symptom img{
         transform: scale(0.8);
+    }
+    section#persuasive{
+        padding-bottom: 100px;
     }
     section#persuasive h2{
         font-size: 30px;
@@ -508,6 +506,9 @@ footer .credits p span,footer .credits a{
     section#covid-definition .covid-illustration{
         display: none;
     }
+    section#symptoms{
+        padding-top: 0;
+    }
     section#symptoms p{
         font-size: 16px;
     }
@@ -518,7 +519,8 @@ footer .credits p span,footer .credits a{
         width: 47%;
     }
     section#persuasive{
-        padding-bottom: 200px;
+        padding-top: 50px;
+        padding-bottom: 150px;
     }
     section#persuasive .persuasive-component{
         text-align: center;
@@ -536,6 +538,15 @@ footer .credits p span,footer .credits a{
         transform: translate(-50%, 0) scale(0.5);
         left: 50%;
     }
+    section#news{
+        padding-bottom: 150px;
+    }
+    section#news .container h2{
+        font-size: 30px;
+    }
+    section#news .container .col-md-6 p {
+        font-size: 16px;
+    }    
     footer{
         height: fit-content;
         padding-left: 50px;
@@ -561,6 +572,10 @@ footer .credits p span,footer .credits a{
         padding-right: 30px;
         padding-left: 30px;
     }
+    section#covid-definition{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     section#covid-definition .container-hero{
         margin-top: 0;
     }
@@ -573,13 +588,31 @@ footer .credits p span,footer .credits a{
     section#persuasive .covid-accent{
         transform: translate(-50%,0) scale(0.4);
     }
+    section#news .container .news-item{
+        padding: 15px;
+        width: 250px;
+        height: 370px;
+    }
+    section#news .container .news-item img{
+        transform: scale(0.9);
+    }
+    section#news .container .news-item p:nth-child(2){
+        font-size: 14px;
+        margin-top: 10px;
+        max-height: 60px;
+    }
+    section#news .container .news-item p:nth-child(3),section#news .container .news-item p:nth-child(4){
+        font-size: 14px;
+    }
+    section#news .container .news-item p:nth-child(4){
+        margin-top: 10px;
+    }
     footer{
         padding-left: 30px;
         padding-right: 30px;
         text-align: center;
     }
     footer .gws h2{
-        border: 1px solid black;
         width: fit-content;
         text-align: center;
     }
@@ -587,5 +620,8 @@ footer .credits p span,footer .credits a{
         width: 100%;
         margin-bottom: 20px;
         margin-left: 0;
+    }
+    .owl-nav{
+        display: none;
     }
 }

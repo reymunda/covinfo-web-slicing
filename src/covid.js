@@ -69,16 +69,16 @@ axios.get('https://run.mocky.io/v3/01f96cd5-cc3a-426e-abc1-13c4454e596b')
         pagination: false,
         responsive: {
           0: {
-            items: 1.25,
+            items: 1.10,
           },
           576: {
-            items: 2.25,
+            items: 1.25,
           },
           768: {
-            items: 3,
+            items: 2.25,
           },
-          1024: {
-            items: 3,
+          992: {
+            items: 2.25,
           },
           1280: {
             items: 3.25,
