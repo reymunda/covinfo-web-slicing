@@ -22,15 +22,17 @@ $(document).ready(() => {
 //     });
 // });
 
-axios.get('https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=f236c6f23d13411ab924ce6172a37a67', {
-  params: {
-    country: 'id',
-    category: 'news',
-    apiKey: 'f236c6f23d13411ab924ce6172a37a67',
-  },
-})
+// axios.get('https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=f236c6f23d13411ab924ce6172a37a67', {
+//   params: {
+//     country: 'id',
+//     category: 'news',
+//     apiKey: 'f236c6f23d13411ab924ce6172a37a67',
+//   },
+// })
+axios.get('https://run.mocky.io/v3/01f96cd5-cc3a-426e-abc1-13c4454e596b')
   .then((res) => {
     const article = res.data.articles;
+    console.log('takunjay');
     const articleContainer = document.querySelector('.owl-stage');
     article.forEach((e) => {
       const articleComponent = document.createElement('div');
@@ -61,30 +63,27 @@ axios.get('https://newsapi.org/v2/top-headlines?country=id&category=health&apiKe
       $('.owl-carousel').removeClass('owl-center owl-loaded owl-text-select-on');
 
       $('.owl-carousel').owlCarousel({
-          items:3.25,
-          nav: true,
-          navText: ['<img src="./assets/previous.svg" class="me-5" role="presentation">','<img src="./assets/next.svg" role="presentation">'],
-          pagination: false,
-          responsive: {
-            0: {
-              items: 1.25,
-            },
-            576: {
-              items: 2.25,
-            },
-            768: {
-              items: 3,
-            },
-            1024: {
-              items: 3.25,
-            },
-            1280: {
-              items: 3.25,
-            }
-          }
+        items: 3.25,
+        nav: true,
+        navText: ['<img src="./assets/previous.svg" class="me-5" role="presentation">', '<img src="./assets/next.svg" role="presentation">'],
+        pagination: false,
+        responsive: {
+          0: {
+            items: 1.25,
+          },
+          576: {
+            items: 2.25,
+          },
+          768: {
+            items: 3,
+          },
+          1024: {
+            items: 3,
+          },
+          1280: {
+            items: 3.25,
+          },
+        },
       }); // re-initialise the owl
-      document.querySelector('.owl-prev').addEventListener('click',() => {
-          console.log('tes')
-      })
     }
   });
